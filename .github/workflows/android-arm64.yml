@@ -32,9 +32,9 @@ jobs:
           CGO_ENABLED: '0'
         run: |
           mkdir -p dist
-          go build -trimpath -ldflags="-s -w" -o dist/tunnel-client ./cmd/client
-          go build -trimpath -ldflags="-s -w" -o dist/tunnel-client-runtime ./cmd/client-runtime
-          go build -trimpath -ldflags="-s -w" -o dist/tunnel-client-runtime-cloudflared ./cmd/client-runtime-cloudflared
+          go build -buildmode=pie -trimpath -ldflags="-s -w" -o dist/tunnel-client ./cmd/client
+          go build -buildmode=pie -trimpath -ldflags="-s -w" -o dist/tunnel-client-runtime ./cmd/client-runtime
+          go build -buildmode=pie -trimpath -ldflags="-s -w" -o dist/tunnel-client-runtime-cloudflared ./cmd/client-runtime-cloudflared
 
       - name: Upload binaries
         uses: actions/upload-artifact@v4
