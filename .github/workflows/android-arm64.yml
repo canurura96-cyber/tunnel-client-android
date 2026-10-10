@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Linux ARM64 binaries
         env:
-          GOOS: linux
+          GOOS: android
           GOARCH: arm64
           CGO_ENABLED: '0'
         run: |
