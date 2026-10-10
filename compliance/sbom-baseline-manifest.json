@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "syftVersion": "1.46.0",
+  "goVersion": "go1.27.0",
+  "environment": {
+    "LC_ALL": "C",
+    "TZ": "UTC",
+    "SOURCE_DATE_EPOCH": 0
+  },
+  "platforms": [
+    "linux/amd64",
+    "linux/arm64",
+    "darwin/amd64",
+    "darwin/arm64",
+    "windows/amd64",
+    "windows/arm64"
+  ],
+  "buildMetadata": {
+    "semanticVersion": "0.0.0-baseline",
+    "gitSHA": "baseline",
+    "cgoEnabled": "0",
+    "flags": [
+      "-trimpath",
+      "-buildvcs=false"
+    ],
+    "flavors": [
+      "full",
+      "runtime",
+      "runtime-cloudflared"
+    ]
+  },
+  "cloudflaredManifestSHA256": "80003d8a8f38d6a0bd74aabc096e9f99a6e8fad8ed4da699e26a8231fa453aa1",
+  "baselineScope": "canonical six-platform staged payload union",
+  "documents": {
+    "tunnel-client.spdx.json": {
+      "sha256": "f069ddddbfd38f4a10a732e59ac2524df946998a1c8e18eec095f0a5334b854e"
+    },
+    "tunnel-client-runtime.spdx.json": {
+      "sha256": "e1691f2c094e5821edc924da7f00e6fb8a2bcb7471cd4c48359f758635625337"
+    },
+    "tunnel-client-runtime-cloudflared.spdx.json": {
+      "sha256": "59e1dc48632aa76a694dae724f19d7137685aa12a12e7ee21ea10d8bac238295"
+    }
+  }
+}
